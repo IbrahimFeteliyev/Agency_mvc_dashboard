@@ -1,0 +1,26 @@
+﻿@model StartbootstrapAgency.Models.Portfolio
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Portfolio</h4>
+<hr />
+<form method="post">
+    <div class="col-5">
+       <input class="form-control mb-2" asp-for="Title" />
+       <input class="form-control mb-2" asp-for="Description" />
+       <input class="form-control mb-2" asp-for="PhotoURL" />
+       <input class="form-control mb-2" asp-for="Client" />
+       <input class="form-control mb-2" asp-for="CreatedDate" />
+       <input class="form-control mb-2" asp-for="CategoryID" />
+       <input class="btn btn-warning btn-sm" type="submit" value="Edit" />
+    </div>
+
+</form>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
